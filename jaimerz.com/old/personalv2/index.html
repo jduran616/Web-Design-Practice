@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- Personal website for Jaime Duran Created from the ground up by Jaime Duran -->
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>Jaime Duran</title>
+ </head>
+ <body>
+  <div class="hero">
+     <!-- image curtesy of https://unsplash.com/new?photo=-n4Lw7zArIk Khara Woods-->
+    <div class="view">
+      <h1>Jaime Duran</h1>
+      <h2>Front End Developer / Programmer / Photographer</h2>
+    </div>
+  </div>
+  <header>
+    <nav class="inline">
+      <div class="inline-bar">
+        <ul class="bar-list">
+          <li class="bar-item">
+            <a href="index.html" class="bar-anchor name">Jaime Duran</a>
+          </li>
+          <li class="bar-item"><a href="#about" class="bar-anchor">About</a></li>
+          <li class="bar-item"><a href="#skills" class="bar-anchor">Skills</a></li>
+          <li class="bar-item"><a href="#projects" class="bar-anchor">Projects</a></li>
+          <li class="bar-item"><a href="#contact" class="bar-anchor">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <div class="content">
+      <div id="about">
+        <div class="wrapper">
+          <div class="view-space">
+            <hr />
+            <h2>About Me</h2>
+            <hr />
+            <section>
+                <p>I am new college graduate who found his love for Web Design and Programming through his High School Tech courses. I recently graduateds from Butte College with a dual Associate’s Degree in Computer Science and Computer Programming.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="projects">
+        <div class="wrapper">
+
+          <hr />
+          <h2>Recent Projects</h2>
+          <hr />
+          <div class="view">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/foobt.PNG" alt="Foo bee tee dot net">
+              </div>
+              <div class="card-text">
+                <h2><a href="http://www.foobt.net">Foobt.net</a></h2>
+                <p>Foobt is a website that I have been developing and editing for Boyd Trollinger, a CSCI Instructor at Butte College. The site is made using Jade, CSS3, Node.js and Mongodb.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/this.PNG" alt="Jaime Duran Site">
+              </div>
+              <div class="card-text">
+                <h2><a href="">This Site</a></h2>
+                <p>This site is used as a portfolio, developed by me. It was made using HTML5 and CSS3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="contact">
+        <div class="wrapper">
+          <div class="view">
+            <hr />
+            <h2>Contact</h2>
+            <hr />
+            <form name="sub-cont" action="index.html" onsubmit="return valEm()">
+              <label for="name"></label>
+              <input id="name" name="Name" type="text" placeholder="Name" required>
+              <label for="email"></label>
+              <input id="email" name="Email" type="email" placeholder="Email" required>
+              <textarea id="message" placeholder="Message" required></textarea>
+              <button class="btn">Send Email</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="setter">
+        <div class="row">
+          <div class="left">
+            <h3>&copy; Jaime Duran 2017</h3>
+          </div>
+          <div class="right">
+            <a href="https://www.twitter.com/imjd3"><img src="img/twitter.svg" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/jaime-duran-42b46713b"><img src="img/social-linkedin.svg" alt="LinkdIn"></a>
+            <a href="https://www.github.com/jduran616"><img src="img/social-github.svg" alt="GitHub"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+      <div class="modal" id="Modal">
+        <div class="cls-btn">
+          &times;
+        </div>
+        <img class="mod-img">
+      </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+  </body>
+  </html>

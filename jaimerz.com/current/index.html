@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="jaimerz is a personal online portfolio and test area for Jaime Duran.">
+  <meta name="keywords" content="Web Design, UX Design, California, Northern California, Chico California, Chico">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Jaime Duran</title>
+  <title>Document</title>
+</head>
+<body>
+  <header class="box">
+    <div class="logo">
+      <h1>Jaime Duran</h2>
+      <h2>Front End Developer / Software Engineer / Playful Thinker</h4>
+    </div>
+  </header>
+
+  <nav class="inline">
+    <div class="inline-bar">
+      <ul class="bar-list">
+        <li class="bar-item">
+          <a href="index.html" class="bar-anchor name">Jaime Duran</a>
+        </li>
+        <li class="bar-item"><a href="#about" class="bar-anchor">About</a></li>
+        <li class="bar-item"><a href="#skills" class="bar-anchor">Skills</a></li>
+        <li class="bar-item"><a href="#projects" class="bar-anchor">Projects</a></li>
+        <li class="bar-item"><a href="#contact" class="bar-anchor">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="content">
+    <article>
+      <div id="about">
+        <h1>Who am I?</h1>
+        <hr>
+        <div class="row">
+          <div class="columns four round">
+            <figure>
+              <img src="./img/ico.JPG" alt="Image of me">
+            </figure>
+          </div>
+          <div class="columns eight">
+            <p class="t-left">I am a recent college graduate who found his love for web development and programming
+               through the fires of high school. Most nights I spend coding away and practicing new web
+               design styles. Most days I spend reading and exploring new music.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="skills">
+        <h1>What I Know</h1>
+        <hr>
+        <div class="row skill-set">
+          <div class="columns six">
+            <strong>Degrees/Certificates</strong>
+            <ul class="t-left">
+              <li>AS in Computer Science</li>
+              <li>AS in Computer Programming</li>
+              <li>R.O.P Certified in Web Design</li>
+            </ul>
+          </div>
+
+          <div class="columns six">
+            <strong>Programming Languages</strong>
+            <ul class="t-left">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>JQuery</li>
+              <li>C++</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="projects">
+        <h1>Recent Projects</h1>
+
+        <hr>
+
+        <div class="posts row">
+
+          <div class="post columns four">
+            <h5>Foobt.net</h5>
+            <img src="./img/foobt-sm.PNG" alt="foo bee tee dot net">
+            <p>
+              Foobt is a website that I have been developing and editing for Boyd Trollinger, a CSCI Instructor at Butte College. The site is made using Jade, CSS3, Node.js and Mongodb.
+            </p>
+            <a class="cta-button" target="_blank" href="http://www.foobt.net">View Site</a>
+          </div>
+
+          <div class="post columns four">
+            <h5>Old Jaimerz layout</h5>
+            <img src="./img/this.PNG" alt="old hi murz dot com">
+            <p>
+              This my old site layout that was used as a portfolio, developed by me. It was made using HTML5 and CSS3.
+            </p>
+            <a class="cta-button" target="_blank" href="http://www.jaimerz.com/html/old.html">View Site</a>
+          </div>
+
+          <div class="post columns four">
+            <h5>Current Jaimerz layout</h5>
+            <img src="./img/new-site-sm.PNG" alt="current hi murz dot com">
+            <p>
+              This is my current site, that is used as my portfolio and testing ground for web development and design. This site is made using HTML5, CSS3, JavaScript, JQuery, and a bit of Skeleton.
+            </p>
+            <a class="cta-button" target="_blank" href="http://www.jaimerz.com/">View Site</a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="contact">
+        <h1>Contact</h1>
+
+        <hr>
+
+        <div>
+          <form method="POST" action="http://formspree.io/jaime@jaimerz.com">
+            <div class="row">
+              <div class="six columns">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Your Name">
+              </div>
+              <div class="six columns">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="example@email.com">
+              </div>
+            </div>
+            <label for="message">Message</label>
+            <textarea name="message" placeholder="Your message"></textarea>
+            <input class="cta-button" type="submit" value="Send">
+          </form>
+        </div>
+      </div>
+
+
+    </article>
+  </section>
+
+  <footer>
+    <div class="footer-stuff">
+      <div class="columns six t-left"><strong>&copy; Jaime Duran 2017</strong></div>
+      <div class="columns six f-right">
+          <a href="https://www.linkedin.com/in/jaime-duran-42b46713b"><img src="img/social-linkedin.svg" alt="LinkdIn"></a>
+          <a href="https://www.github.com/jduran616"><img src="img/social-github.svg" alt="GitHub"></a>
+      </div>
+    </div>
+  </footer>
+  <div class="modal" id="Modal">
+    <div class="cls-btn">
+      &times;
+    </div>
+    <img class="mod-img">
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

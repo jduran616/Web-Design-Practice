@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather Search : Jaime Duran</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <form id="search" method="">
+    <fieldset>
+      <label for="city">City Name</label>
+      <input id ="city" type="text" name="city" placeholder="e.g. San Francisco">
+      <!-- <div class="row">
+        <label for="latitude">Latitude</label>
+        <input id ="latitude" type="text" name="latitude">
+        <label for="longitude">Longitude</label>
+        <input id ="longitude" type="text" name="longitude">
+      </div> -->
+    </fieldset>
+    <button>Go</button>
+  </form>
+  <!-- <h2>
+    <div id="local"></div>
+  </h2> -->
+  <h1 id="nin">
+    <div id="temp"></div>
+    <div id="minutely"></div>
+  </h1>
+  <div id="weekly">
+    <ul id=weekDays></ul>
+  </div>
+  <div id="powered">
+    <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
+  </div>
+  <script src="skycons.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

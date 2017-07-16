@@ -1,0 +1,21 @@
+section {
+  margin: 100px;
+}
+
+div.container h2 {
+  text-align: left;
+}
+
+div.col-sm-12 h2, header {
+  text-align: center;
+}
+
+footer {
+  padding: 2rem 0;
+}
+
+footer div.container {
+  padding-top: 1rem;
+  border-top: 2px solid #eee;
+  text-align: right;
+}

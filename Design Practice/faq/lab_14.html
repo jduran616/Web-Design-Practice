@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+- Filename:		lab_14.html
+- Description:	Dynamic FAQ
+- Author:		Jaime Duran
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ | Jaime Duran</title>
+  <meta name="description" content="FAQ Lab">
+  <meta name="author" content="Jaime Duran">
+  <meta name="keywords" content="faq, jaime, duran">
+  <!-- <link rel="stylesheet" href="../Skeleton-2.0.4/css/skeleton.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+</head>
+<body>
+  <!--header-->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="offset-by-four columns">
+          <div class="six columns">
+            <h2>Dynamic FAQ</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--start of main-->
+  <section id="main">
+    <div class="container">
+      <div class="row">
+        <h3>FAQ</h3>
+        <div class="twelve columns">
+          <div class="twelve columns">
+              <h2>
+                What is the meaning of life?
+              </h2>
+
+              <p class="offset-by-two columns hide">42</p>
+
+              <h2>
+                What is the meaning of life?
+              </h2>
+
+              <p class="offset-by-two columns hide">42</p>
+
+              <h2>
+                What is the meaning of life?
+              </h2>
+
+              <p class="offset-by-two columns hide">42</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--form <input-->
+  <hr>
+  <section id="addit">
+    <h1 id="no-show">noshow</h1>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <label>Add Your Own Questions and Answers</label>
+          <hr>
+          <form id="faq-form">
+            <div class="row">
+              <div class="six columns">
+                <label for="question" class="u-pull-left">Question</label>
+                <input id="question" class="u-full-width" type="text" name="Question" PlaceHolder="Question" required="REQUIRED"/>
+              </div>
+              <div class="six columns">
+                <label for="answer" class="u-pull-left">Answer</label>
+                <input id="answer" class="u-full-width" type="text" name="Answer" placeholder="Answer" required="REQUIRED"/>
+              </div>
+            </div>
+            <div class="row extra">
+              <input class="button-primary six columns" type="submit" value="Submit"/>
+              <button id="show" class="button-primary six columns" type="button">Show All</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> <!--end container-->
+  </section>
+  <!--footer start-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="four columns u-pull-right">
+          Button Button Button Button
+          <!--buttons go here eventually-->
+        </div>
+        <div class="four columns u-pull-left">
+          &copy; Jaime Duran
+        </div>
+      </div>
+    </div> <!-- end Container -->
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="js/handler.js"></script><!--script-->
+</body>
+</html>

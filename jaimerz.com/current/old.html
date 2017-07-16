@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!-- Personal website for Jaime Duran Created from the ground up by Jaime Duran -->
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <title>Jaime Duran</title>
+  <style>
+  @import url("https://fonts.googleapis.com/css?family=Indie+Flower|Roboto");
+  html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto"; }
+
+  html {
+  background: #03C4D8; }
+
+  body {
+  margin: 0 auto;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column; }
+  body .content {
+   flex: 1;
+   max-width: 970px;
+   margin: 0 auto;
+   background: #FFF;
+   border: 13px solid white;
+   border-radius: 3px;
+   box-shadow: 0 0 60px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1); }
+
+  .wrapper {
+  max-width: 960px;
+  flex: 3; }
+  .wrapper:after {
+   display: table;
+   content: "";
+   clear: both; }
+
+  .hero {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/khara-woods-247319.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: "Indie Flower", sans-serif;
+  position: relative; }
+  .hero h1 {
+   text-transform: uppercase;
+   text-align: center; }
+
+  header {
+  background: #111;
+  text-align: center;
+  background: #39E8BE; }
+  header nav {
+   text-align: center;
+   padding: 20px;
+   max-width: 960px; }
+   header nav:after {
+     display: table;
+     content: "";
+     clear: both; }
+   header nav .bar-list {
+     list-style: none;
+     float: left; }
+     header nav .bar-list .bar-item {
+       float: left;
+       padding-right: .9rem; }
+       header nav .bar-list .bar-item .bar-anchor {
+         text-decoration: none;
+         color: #000;
+         text-transform: uppercase;
+         position: relative;
+         padding-bottom: 7px; }
+         header nav .bar-list .bar-item .bar-anchor.name {
+           font-weight: bold; }
+         header nav .bar-list .bar-item .bar-anchor:before {
+           content: "";
+           width: 0;
+           height: 2px;
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           background: #FFF;
+           transition: all .7s ease-in-out; }
+         header nav .bar-list .bar-item .bar-anchor:hover:before {
+           width: 100%; }
+
+  #about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  width: 960px;
+  padding-top: 20px; }
+  #about .view-space {
+   margin: 3rem 0;
+   text-align: center;
+   justify-content: center; }
+   #about .view-space p {
+     text-align: center;
+     width: 640px; }
+
+  #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; }
+  #contact .view {
+   margin: 3rem 0;
+   text-align: center; }
+  #contact .btn {
+   background: #FFF;
+   color: #EF8354;
+   border: 1px solid #EF8354;
+   -webkit-border-radius: 28;
+   -moz-border-radius: 28;
+   border-radius: 28px;
+   font-size: 20px;
+   padding: 10px 20px 10px 20px;
+   text-decoration: none;
+   float: left;
+   margin-bottom: 20px; }
+   #contact .btn:hover {
+     background: #3cb0fd;
+     background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+     text-decoration: none;
+     color: #FFF; }
+
+  footer {
+  flex: none;
+  background: #aaa;
+  margin-top: 2rem;
+  background: #39E8BE; }
+  footer .setter {
+   max-width: 970px;
+   margin: 0 auto; }
+  footer .row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center; }
+   footer .row .left {
+     display: flex;
+     justify-content: flex-start; }
+     footer .row .left h3 {
+       text-transform: uppercase; }
+   footer .row .right {
+     display: flex;
+     align-items: flex-end; }
+     footer .row .right a {
+       text-decoration: none; }
+       footer .row .right a:visited, footer .row .right a:link {
+         color: #000; }
+       footer .row .right a:hover {
+         transform: scale(1.5); }
+       footer .row .right a img {
+         width: 25px;
+         height: auto; }
+         footer .row .right a img:not(last-of-type) {
+           margin-right: 10px; }
+
+  input[type="text"], input[type="email"], textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(4em + 1px);
+  margin: 0 0 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background: #fff;
+  resize: none;
+  outline: none;
+  border-radius: 6px; }
+
+  textarea {
+  height: calc(10em + 1px); }
+
+  input[type="text"][required]:focus, input[type="email"][required]:focus, textarea[required]:focus {
+  border-color: #00bafa; }
+
+  hr {
+  max-width: 960px; }
+
+  #projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; }
+  #projects h2 {
+   text-align: center; }
+  #projects .view {
+   margin: 3rem 0;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   text-align: center; }
+   #projects .view .card {
+     width: 100%;
+     max-width: 300px;
+     min-height: 400px;
+     background: #FFF;
+     margin: 20px;
+     position: relative;
+     border-bottom: 1px solid #eee;
+     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1); }
+     #projects .view .card .card-img {
+       width: 100%;
+       height: 0;
+       overflow: hidden;
+       position: relative;
+       padding-bottom: 60%; }
+       #projects .view .card .card-img img {
+         z-index: 1;
+         position: relative;
+         width: 100%;
+         cursor: pointer; }
+     #projects .view .card .card-text {
+       margin-top: 0;
+       padding: 20px; }
+       #projects .view .card .card-text h2 {
+         text-transform: uppercase;
+         font-weight: 400;
+         margin: 0 0 10px; }
+       #projects .view .card .card-text p {
+         line-height: 1.35;
+         padding: 20px;
+         margin: 0; }
+     #projects .view .card a {
+       text-decoration: none;
+       color: #000;
+       text-transform: uppercase;
+       position: relative;
+       padding-bottom: 7px; }
+       #projects .view .card a:before {
+         content: "";
+         width: 0;
+         height: 2px;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         background: #FFF;
+         transition: all .7s ease-in-out; }
+       #projects .view .card a:hover:before {
+         width: 100%; }
+
+  @keyframes zoom {
+  from {
+   transform: scale(0); }
+  to {
+   transform: scale(1); } }
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  overflow: none; }
+  .modal .mod-img {
+   margin: auto;
+   width: 80%;
+   height: 80%;
+   display: block;
+   padding-top: 75px; }
+  .modal .cls-btn {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   cursor: pointer;
+   font-weight: 700;
+   font-size: 40px;
+   color: #FFF;
+   transition: 0.3s; }
+
+  .m-open {
+  overflow: hidden; }
+
+  /*# sourceMappingURL=style.css.map */
+
+   </style>
+ </head>
+ <body>
+  <div class="hero">
+     <!-- image curtesy of https://unsplash.com/new?photo=-n4Lw7zArIk Khara Woods-->
+    <div class="view">
+      <h1>Jaime Duran</h1>
+      <h2>Front End Developer / Programmer / Photographer</h2>
+    </div>
+  </div>
+  <header>
+    <nav class="inline">
+      <div class="inline-bar">
+        <ul class="bar-list">
+          <li class="bar-item">
+            <a href="http://www.jaimerz.com" class="bar-anchor name">Jaime Duran</a>
+          </li>
+          <li class="bar-item"><a href="#about" class="bar-anchor">About</a></li>
+          <li class="bar-item"><a href="#skills" class="bar-anchor">Skills</a></li>
+          <li class="bar-item"><a href="#projects" class="bar-anchor">Projects</a></li>
+          <li class="bar-item"><a href="#contact" class="bar-anchor">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <div class="content">
+      <div id="about">
+        <div class="wrapper">
+          <div class="view-space">
+            <hr />
+            <h2>About Me</h2>
+            <hr />
+            <section>
+                <p>I am new college graduate who found his love for Web Design and Programming through his High School Tech courses. I recently graduateds from Butte College with a dual Associate’s Degree in Computer Science and Computer Programming.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="projects">
+        <div class="wrapper">
+
+          <hr />
+          <h2>Recent Projects</h2>
+          <hr />
+          <div class="view">
+            <div class="card">
+              <div class="card-img">
+                <img src="../img/foobt-lg.PNG" alt="Foo bee tee dot net">
+              </div>
+              <div class="card-text">
+                <h2><a href="http://www.foobt.net">Foobt.net</a></h2>
+                <p>Foobt is a website that I have been developing and editing for Boyd Trollinger, a CSCI Instructor at Butte College. The site is made using Jade, CSS3, Node.js and Mongodb.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img">
+                <img src="../img/this.PNG" alt="Jaime Duran Site">
+              </div>
+              <div class="card-text">
+                <h2><a href="">This Site</a></h2>
+                <p>This site is used as a portfolio, developed by me. It was made using HTML5 and CSS3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="contact">
+        <div class="wrapper">
+          <div class="view">
+            <hr />
+            <h2>Contact</h2>
+            <hr />
+            <form method="POST" action="http://formspree.io/jaime@jaimerz.com">
+              <label for="name">Name</label>
+              <input type="text" name="name" placeholder="Your Name">
+              <label for="email">Email</label>
+              <input type="email" name="email" placeholder="Your email">
+              <label for="message">Message</label>
+              <textarea name="message" placeholder="Your message"></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="setter">
+        <div class="row">
+          <div class="left">
+            <h3>&copy; Jaime Duran 2017</h3>
+          </div>
+          <div class="right">
+            <a href="https://www.linkedin.com/in/jaime-duran-42b46713b"><img src="../img/social-linkedin.svg" alt="LinkdIn"></a>
+            <a href="https://www.github.com/jduran616"><img src="../img/social-github.svg" alt="GitHub"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+      <div class="modal" id="Modal">
+        <div class="cls-btn">
+          &times;
+        </div>
+        <img class="mod-img">
+      </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+  </body>
+  </html>

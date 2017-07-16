@@ -1,0 +1,1 @@
+"use strict";var source = "";$('img').click(function() {source = $(this).attr('src');$('.mod-img').attr('src', source);$('.modal').css('display', "block");$('body').addClass('m-open');});$('.cls-btn').on('click', function() {$('.modal').css('display', 'none');$('body').removeClass('m-open');source = "";});

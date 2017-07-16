@@ -1,0 +1,63 @@
+@import url("normalize.css");
+@import url("skeleton.css");
+
+/*custom*/
+body {
+    background:#999;
+    color: #DDDDDD;
+}
+
+header {
+    margin-top: 5em;
+    border-bottom: 2px solid;
+}
+
+footer {
+    padding: 50px 0;
+    background: none;
+    border-top: 2px solid;
+}
+
+.extra {
+    margin-top: 2em;
+}
+
+h3 {
+    text-align:center;
+}
+
+li {
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: #1EAEDB;
+    font-size: 2em;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+#addit, #main {
+    margin-bottom: 2em;
+    padding: 5em 0;
+}
+
+p {
+    font-size: 2em;
+    margin-top: 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+label{
+    text-align:center;
+    font-size: 2em;
+}
+
+#no-show {
+    display: none;
+}
+
+.hide{
+  display: none;
+}
